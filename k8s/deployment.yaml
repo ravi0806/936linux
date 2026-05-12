@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: mobile-store
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: mobile-store
+
+  template:
+
+    metadata:
+      labels:
+        app: mobile-store
+
+    spec:
+
+      containers:
+
+      - name: mobile-store
+
+        image: 391824190386.dkr.ecr.ap-south-1.amazonaws.com/mobile-store:latest
+
+        ports:
+
+        - containerPort: 80

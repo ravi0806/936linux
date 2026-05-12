@@ -10,7 +10,7 @@ pipeline {
 
         AWS_ACCOUNT_ID = '391824190386'
 
-        ECR_REPO = "${391824190386}.dkr.ecr.${ap-south-1}.amazonaws.com/{mobile-store}"
+        ECR_REPO = "391824190386.dkr.ecr.${ap-south-1}.amazonaws.com/mobile-store"
     }
 
     stages {
